@@ -1,0 +1,37 @@
+work 10/60/60
+item PobreLang/value 0
+item PobreLang/value2 0
+
+item PobreLang/calc 0
+scream Enter one number!
+antidisestablishmentarianism PobreLang/value
+scream Enter another number!
+antidisestablishmentarianism PobreLang/value2
+scream +1 -2 /3 x4
+listen PobreLang/calc
+
+if PobreLang/calc==1 PobreLang/adding
+if PobreLang/calc==2 PobreLang/sub
+if PobreLang/calc==3 PobreLang/div
+if PobreLang/calc==4 PobreLang/mul
+stamp PobreLang/adding
+	item PobreLang/result PobreLang/value+PobreLang/value2
+	scream PobreLang/result
+
+stamp PobreLang/sub
+	item PobreLang/result PobreLang/value-PobreLang/value2
+	scream PobreLang/result
+
+stamp PobreLang/div
+	item PobreLang/result PobreLang/value/PobreLang/value2	
+	scream PobreLang/result
+
+stamp PobreLang/mul
+	item PobreLang/result PobreLang/value*PobreLang/value2	
+	scream PobreLang/result
+
+
+
+
+
+
